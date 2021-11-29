@@ -16,13 +16,15 @@ const options = {
     onClose(selectedDates) {
         dateVerification(selectedDates)
     },
-}
+};
 flatpickr(input, options);
 
 
 startBtn.addEventListener('click', startCountdown)
 
 function dateVerification(date) {
+    
+
     let selectedDate = date[0].getTime();
     let currentDate = Date.now();
 
